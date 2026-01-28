@@ -12,6 +12,8 @@ public class PageController {
     @GetMapping("/home")
     public String home(Model model) {
         System.out.println("Home Page Handler");
+
+        //sending data to view
         model.addAttribute("name","Springboot Application");
         model.addAttribute("YoutubeChannel","SpringIO");
         model.addAttribute("GithubRepo","https://github.com/Shivani-Developer89");
