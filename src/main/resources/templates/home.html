@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
 
-    <style>
-        .container {
-            margin: auto;
-            width: 50%;
-            padding: 30px;
-            background-color: antiquewhite;
-        }
-    </style>
+
 </head>
 
-
 <body>
-    <div class="container">
-        <h1 data-th-text="${name}">Welcome to Our Home Page</h1>
-        <p>Youtube Channel : <span th:text="${YoutubeChannel}"></span></p>
+    <div class=" bg-gray-200 w-1/2 p-4 flex flex-col space-y-3 mx-auto mt-4">
+        <h1 class=" text-2xl font-bold" data-th-text="${name}">Welcome to Our Home Page</h1>
+        <p class="text-xl text-gray-700">Youtube Channel : <span th:text="${YoutubeChannel}"></span></p>
         <p>GitHub Link: <span th:text="${GithubRepo}"></span></p>
 
         <a data-th-href="${GithubRepo}">Click here</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolore error maiores, repellat nemo quaerat at odit earum tempore, explicabo aperiam enim illo architecto rem laboriosam temporibus iusto, reiciendis pariatur! Obcaecati facilis
-            at pariatur alias voluptas dignissimos iure quam ipsum labore, itaque voluptatem? Ducimus dolore nisi quis modi, voluptatum laudantium?</p>
 
+        <p class="text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolore error maiores, repellat nemo quaerat at odit earum tempore, explicabo aperiam enim illo architecto rem laboriosam temporibus iusto, reiciendis pariatur! Obcaecati facilis at pariatur
+            alias voluptas dignissimos iure quam ipsum labore, itaque voluptatem? Ducimus dolore nisi quis modi, voluptatum laudantium?</p>
+
+        <div>
+            <button class="px-3 py-3 rounded bg-blue-700 text-white hover:bg-blue-600"> click me</button>
+
+        </div>
     </div>
 </body>
 
