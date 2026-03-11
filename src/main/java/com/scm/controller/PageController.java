@@ -19,4 +19,23 @@ public class PageController {
         model.addAttribute("GithubRepo","https://github.com/Shivani-Developer89");
         return "home";
     }
+
+
+     //about route
+     @GetMapping("/about")
+     public String aboutPage() {
+        System.out.println("about page loading");
+        return "about";
+     }
+
+
+       //about service
+     @GetMapping("/services")
+     public String servicesPage() {
+        System.out.println("service page loading");
+        return "services";
+     }
+
+
+
 }
