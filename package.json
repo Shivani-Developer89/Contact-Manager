@@ -1,0 +1,25 @@
+{
+    "name": "scm",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Shivani-Developer89/Contact-Manager.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Shivani-Developer89/Contact-Manager/issues"
+    },
+    "homepage": "https://github.com/Shivani-Developer89/Contact-Manager#readme",
+    "description": "",
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.18",
+        "tailwindcss": "^4.1.18"
+    }
+}
