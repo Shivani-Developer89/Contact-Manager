@@ -11,7 +11,8 @@
 
     <h1>this is about page </h1>
     <hr>
-    <div class="host-tag" th:insert="~{base :: parent}"></div>
+    <div class="host-tag" th:insert="~{base :: parent(~{:: p})}"></div>
+    <p>This is a dyanmic content</p>
 </body>
 
 </html>
