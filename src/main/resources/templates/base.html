@@ -1,5 +1,6 @@
-<div class="host-tag" th:fragment="parent">
+<div class="host-tag" th:fragment="parent(content)">
     <h1>This is a parent fragment</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, cum.</p>
+    <div th:replace="${content}"></div>
 
 </div>
