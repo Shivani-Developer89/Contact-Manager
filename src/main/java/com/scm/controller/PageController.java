@@ -23,17 +23,18 @@ public class PageController {
 
      //about route
      @GetMapping("/about")
-     public String aboutPage() {
+     public String aboutPage(Model model) {
+      model.addAttribute("isActive",false);
         System.out.println("about page loading");
         return "about";
      }
 
 
        //about service
-     @GetMapping("/services")
+     @GetMapping("/service")
      public String servicesPage() {
         System.out.println("service page loading");
-        return "services";
+        return "service";
      }
 
 
