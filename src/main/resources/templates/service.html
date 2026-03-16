@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th-replace="~{base :: parent(~{::#content})}">
 
 <head>
     <meta charset="UTF-8">
@@ -8,14 +8,11 @@
 </head>
 
 <body>
+    <section id="content">
+        <h1>Welcome to service </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi doloribus quis fuga voluptas? Aperiam aliquid, commodi delectus obcaecati veritatis deleniti tempora omnis architecto nesciunt quam temporibus perferendis optio consequuntur.</p>
+    </section>
 
-    <h1>this is Service page </h1>
-    <hr>
-    <div th:replace="~{base :: parent(~{:: section})}">
-        <section>
-            <h2>This is Dynamic service passed to the base content</h2>
-        </section>
-    </div>
 </body>
 
 </html>

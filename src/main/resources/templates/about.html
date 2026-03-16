@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{base :: parent(~{::#content})}">
 
 <body>
 
-    <div th:replace="~{base :: parent}">
 
-        <div th:fragment="content">
-            <h2>About Page</h2>
-        </div>
-
+    <div id="content">
+        <h1> Welcome to about Content</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt aut nihil debitis facere consequuntur. Excepturi corporis delectus dolor obcaecati cumque esse maxime distinctio ratione vero? Itaque numquam odio quidem.hhhhhhhhhhhhhh</p>
     </div>
+
 
 </body>
 
