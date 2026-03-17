@@ -5,10 +5,25 @@
 
 <body>
 
-
+    <ul>
+        <li>
+            <a th:href="@{'/home'}">Home</a>
+        </li>
+        <li>
+            <a data-th-href="@{'/service'}">Service</a>
+        </li>
+        <li>
+            <a data-th-href="@{'/about'}">About</a>
+        </li>
+    </ul>
 
     <!--Main content-->
-    <section th:replace="${content}"></section>
+    <div class="p-4">
+        <section th:replace="${content}"></section>
+    </div>
+
+
+    <footer p-4>This is footer</footer>
 
 
 
