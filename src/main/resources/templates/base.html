@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" th:fragment="parent(content)">
-<link rel="stylesheet" data-th-href="@{'/css/output.css'}">
-<link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+<head>
+    <link rel="stylesheet" th:href="@{/css/output.css}">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
 
 <body>
 
-    <div data-th-replace="nav:: navbar"></div>
+    <!-- Navbar -->
+    <div data-th-replace="navbar :: navbar"></div>
 
-    <!--Main content-->
-    <div class="p-4">
+    <!-- Main content -->
+    <div class="p-4 mt-16">
         <section th:replace="${content}"></section>
     </div>
 
-
-    <footer p-4>This is footer</footer>
-
-
+    <!-- Footer -->
+    <footer class="p-4">This is footer</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-</body>
 
-</html>
+</body>
 
 </html>
