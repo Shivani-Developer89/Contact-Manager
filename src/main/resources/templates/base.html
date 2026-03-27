@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:fragment="parent(content)">
+<html class="dark" xmlns:th="http://www.thymeleaf.org" th:fragment="parent(content)">
 
 <head>
     <link rel="stylesheet" th:href="@{/css/output.css}">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="dark:bg-gray-900 dark:text-white">
 
     <!-- Navbar -->
-    <div data-th-replace="navbar :: navbar"></div>
+    <div data-th-replace="~{navbar :: navbar}"></div>
 
     <!-- Main content -->
     <div class="p-4 mt-16">
