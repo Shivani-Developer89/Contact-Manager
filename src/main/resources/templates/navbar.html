@@ -6,20 +6,17 @@
         </a>
 
         <div id=theme_change_button class="flex  gap-2 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button class="bg-gray-200 px-3 py-2 rounded">
+            <button class="bg-gray-200 px-3 py-2 rounded dark:text-black">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brilliance" viewBox="0 0 16 16">
                  <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16M1 8a7 7 0 0 0 7 7 3.5 3.5 0 1 0 0-7 3.5 3.5 0 1 1 0-7 7 7 0 0 0-7 7"/>
-                  </svg></button>
+                  </svg>
+                </button>
             <a data-th-href="@{'/login'}" type="button" class="text-white bg-black hover:bg-gray-800 border border-transparent 
           focus:ring-4 focus:ring-gray-400 shadow-sm font-medium leading-5 
-          rounded-lg text-sm px-3 py-2 focus:outline-none inline-block  dark:hover:bg-blue-700">
-  Login
-</a>
+          rounded-lg text-sm px-3 py-2 focus:outline-none inline-block  dark:hover:bg-blue-700">Login</a>
             <a data-th-href="@{'/signUp'}" type="button" class="text-white bg-black hover:bg-gray-800 border border-transparent 
           focus:ring-4 focus:ring-gray-400 shadow-sm font-medium leading-5 
-          rounded-lg text-sm px-3 py-2 focus:outline-none inline-block  dark:hover:bg-blue-700">
-  SignUp
-</a>
+          rounded-lg text-sm px-3 py-2 focus:outline-none inline-block  dark:hover:bg-blue-700">SignUp</a>
             <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
                 aria-controls="navbar-sticky" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -30,24 +27,37 @@
         <!--main menu-->
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
-                <a data-th-href="@{'/home'}" class="block py-2 px-3 text-gray-700 font-bold rounded 
-         hover:bg-gray-200 
-         md:hover:bg-transparent 
-         md:hover:text-blue-600"> Home
-                </a>
-                <a data-th-href="@{'/about'}" class="block py-2 px-3 text-gray-700 font-bold rounded 
-         hover:bg-gray-200 
-         md:hover:bg-transparent 
-         md:hover:text-blue-600">
-                About</a>
-                <a data-th-href="@{'/service'}" class="block py-2 px-3 text-gray-700 font-bold rounded 
-         hover:bg-gray-200 
-         md:hover:bg-transparent 
-         md:hover:text-blue-600">Service</a>
-                <a data-th-href="@{'/contact'}" class="block py-2 px-3 text-gray-700 font-bold rounded 
-         hover:bg-gray-200 
-         md:hover:bg-transparent 
-         md:hover:text-blue-600">Contact</a>
+                <a data-th-href="@{'/home'}" class="block py-2 px-3 font-medium rounded
+          text-gray-700 dark:text-gray-300
+          hover:bg-gray-200 dark:hover:bg-gray-700
+          md:hover:bg-transparent
+          md:hover:text-blue-600 dark:md:hover:text-blue-400">
+  Home
+</a>
+
+                <a data-th-href="@{'/about'}" class="block py-2 px-3 font-medium rounded
+          text-gray-700 dark:text-gray-300
+          hover:bg-gray-200 dark:hover:bg-gray-700
+          md:hover:bg-transparent
+          md:hover:text-blue-600 dark:md:hover:text-blue-400">
+  About
+</a>
+
+                <a data-th-href="@{'/service'}" class="block py-2 px-3 font-medium rounded
+          text-gray-700 dark:text-gray-300
+          hover:bg-gray-200 dark:hover:bg-gray-700
+          md:hover:bg-transparent
+          md:hover:text-blue-600 dark:md:hover:text-blue-400">
+  Service
+</a>
+
+                <a data-th-href="@{'/contact'}" class="block py-2 px-3 font-medium rounded
+          text-gray-700 dark:text-gray-300
+          hover:bg-gray-200 dark:hover:bg-gray-700
+          md:hover:bg-transparent
+          md:hover:text-blue-600 dark:md:hover:text-blue-400">
+  Contact
+</a>
 
             </ul>
         </div>
