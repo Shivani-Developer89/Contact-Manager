@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{base :: parent(~{::#content})}">
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{base :: parent(~{::#content},~{:: title},~{:: script})}">
 
 <head>
     <meta charset="UTF-8">
@@ -15,5 +15,8 @@
     </section>
 
 </body>
+<script>
+    console.log("service");
+</script>
 
 </html>
