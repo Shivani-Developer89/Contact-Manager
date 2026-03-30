@@ -1,10 +1,10 @@
-<!DOCTYPE html>,~{:: title}
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{base :: parent(~{::#content},~{:: script})}">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{base :: parent(~{::#content},~{:: title}, ~{:: script})}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About </title>
+    <title>About</title>
 </head>
 
 <body>
@@ -14,11 +14,12 @@
         <h1> Welcome to about Content</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt aut nihil debitis facere consequuntur. Excepturi corporis delectus dolor obcaecati cumque esse maxime distinctio ratione vero? Itaque numquam odio quidem.hhhhhhhhhhhhhh</p>
     </div>
+    <script>
+        console.log("About");
+    </script>
 
 
 </body>
-<script>
-    console.log("About");
-</script>
+
 
 </html>
