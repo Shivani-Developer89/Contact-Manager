@@ -1,7 +1,9 @@
 package com.scm.entities;
 
 import com.scm.enums.Providers;
+
 import java.util.ArrayList;
+import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -44,7 +46,7 @@ public class User {
     private String providerUserId;
     
     //mapping
-    @OneToMany(mappedBy="user")
+
     private List<contact> contacts = new  ArrayList<>();
 
 }
