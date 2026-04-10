@@ -17,7 +17,7 @@
                 <a href="#" class="bg-neutral-primary-soft block p-6 border border-default rounded-base shadow-xs hover:bg-neutral-secondary-medium">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">SignUp here</h5>
                     <p class="font-normal text-gray-700 dark:text-gray-400">Start managing contacts on cloud.....</p>
-                    <form method="" class="mt-5">
+                    <form data-th-action="@{'/do-register'}" class="mt-5">
                         <!--Name-->
                         <div class="mb-5">
                             <label for="name" class="block mb-2.5 text-sm font-medium text-heading">Name</label>
@@ -55,7 +55,7 @@
                         </button>
 
                            <button class="px-3 py-2 rounded bg-gray-800 hover:bg-orange text-white dark:bg-blue-800 dark:hover:bg-gray-900">
-                          SignUp
+                          Reset
                         </button>
                      </div>
                     
