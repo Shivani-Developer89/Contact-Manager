@@ -53,8 +53,8 @@ public class PageController {
         return "login";
      }
 
-           //about Contact
-     @GetMapping("/signUp")
+           //about signUp
+    @GetMapping("/signUp")
      public String signUpPage() {
         System.out.println("SignUp page loading");
         return "signUp";
@@ -62,11 +62,11 @@ public class PageController {
 
 
      //processing  registartion
-     @RequestMapping(value = "/do-register" ,method = RequestMethod.POST)
-     public String processRegister(){
-           System.out.println("Processing registration");
-      return "";
-     }
+ @RequestMapping(value = "/do-register", method = RequestMethod.POST)
+public String processRegister() {
+    System.out.println("POST HIT");
+    return "redirect:/signUp";
+}
 
 
 
