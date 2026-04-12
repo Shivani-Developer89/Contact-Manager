@@ -14,10 +14,10 @@
         <div class="grid grid-cols-12">
             <div class="col-span-4  md:col-span-2 lg:col-span-3 xl:col-span-4"></div>
             <div class=" col-span-12 md:col-span-8 lg:col-span-6 xl:col-span-4">
-                <a href="#" class="bg-neutral-primary-soft block p-6 border border-default rounded-base shadow-xs hover:bg-neutral-secondary-medium">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">SignUp here</h5>
+         <div class="bg-white dark:bg-gray-800 p-6 border rounded-lg shadow-md">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">SignUp here</h5>
                     <p class="font-normal text-gray-700 dark:text-gray-400">Start managing contacts on cloud.....</p>
-                    <form data-th-action="@{'/do-register'}" class="mt-5">
+                    <form th:action="@{/do-register}" method="post" class="mt-5">
                         <!--Name-->
                         <div class="mb-5">
                             <label for="name" class="block mb-2.5 text-sm font-medium text-heading">Name</label>
