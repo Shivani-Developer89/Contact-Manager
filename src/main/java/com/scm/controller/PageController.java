@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.scm.forms.UserForm;
+
 @Controller
 
 public class PageController {
@@ -55,8 +57,11 @@ public class PageController {
 
            //about signUp
     @GetMapping("/signUp")
-     public String signUpPage() {
-        System.out.println("SignUp page loading");
+     public String signUpPage(Model model) {
+         
+      UserForm userform = new UserForm();
+      model.addAttribute("user",userform);
+      
         return "signUp";
      }
 
