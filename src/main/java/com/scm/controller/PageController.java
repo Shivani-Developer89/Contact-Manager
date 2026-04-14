@@ -3,6 +3,7 @@ package com.scm.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -60,7 +61,8 @@ public class PageController {
      public String signUpPage(Model model) {
          
       UserForm userform = new UserForm();
-      model.addAttribute("user",userform);
+      // userform.setName("Shivani");
+      model.addAttribute("userform",userform);
       
         return "signUp";
      }
@@ -68,8 +70,9 @@ public class PageController {
 
      //processing  registartion
  @RequestMapping(value = "/do-register", method = RequestMethod.POST)
-public String processRegister() {
+public String processRegister(@ModelAttribute UserForm userform) {
     System.out.println("POST HIT");
+    System.out.println(userform);
     return "redirect:/signUp";
 }
 
